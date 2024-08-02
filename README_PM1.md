@@ -1,7 +1,7 @@
 
 ### 3.0 PROCESO DE GESTIÓN SEGUIMIENTO Y MONITEOREO DE BECARIOS
 Este proceso describe el flujo de trabajo para la evaluación de informes, involucrando a dos actores principales: el Coordinador de Becas y el Analista de Becas. El proceso abarca tres flujos principales: el registro del informe, la revisión del informe y la evaluación del progreso.
-![image](https://github.com/user-attachments/assets/a7f74ccf-982d-4b3c-957b-4cd365b2fee5)
+![img](Assets/bpm.png)
 
 #### ACTORES INVOLUCRADOS
 1. Usuario Solicitante
@@ -21,11 +21,11 @@ Este proceso describe el flujo de trabajo para la evaluación de informes, invol
          
     * Formulario:
       
-      ![image](https://github.com/user-attachments/assets/4618faa7-8ae3-46ea-b9fc-660450c4577d)
+      !![img](Assets/formulario_01.png)
       
     * API REST:
       
-      ![image](https://github.com/user-attachments/assets/93b8c222-6f84-4f20-a42b-7ce564b3a867)
+      ![img](Assets/coordinador.png)
  
 
          
@@ -40,11 +40,11 @@ Este proceso describe el flujo de trabajo para la evaluación de informes, invol
        * Documentos Adjuntos
     * Formulario:
       
-      ![image](https://github.com/user-attachments/assets/ca4c277c-ab8f-4d19-9f79-069e88e3f82c)
+      !![img](Assets/formulario_02.png)
 
     * API REST:
     
-     ![image](https://github.com/user-attachments/assets/67609fba-7fb7-4752-848e-1f8d6a171904)
+     ![img](Assets/registrador.png)
 
 
          
@@ -60,7 +60,7 @@ Este proceso describe el flujo de trabajo para la evaluación de informes, invol
        * DocumentosAdjuntos
     * Formulario
       
-      ![image](https://github.com/user-attachments/assets/ea1fba55-829b-438e-9e96-599f9d53d742)
+      !![img](Assets/formulario_03.png)
 
          
 4. Evaluación del progreso
@@ -75,7 +75,7 @@ Este proceso describe el flujo de trabajo para la evaluación de informes, invol
        * Comentarios
     * Formulario:
       
-      ![image](https://github.com/user-attachments/assets/14ebed6a-0032-4c9d-8fc5-cae4fadd23cc)
+      ![img](Assets/formulario_04.png)
 
 
 
