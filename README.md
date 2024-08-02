@@ -10,4 +10,4 @@
 
 ### 3.2 Proceso de Convocatoria y Selección de Becarios
 
-[Más información sobre el Proceso de Convocatoria y Selección de Becarios](./README_PM3md)
+[Más información sobre el Proceso de Convocatoria y Selección de Becarios](./README_PM3.md)
