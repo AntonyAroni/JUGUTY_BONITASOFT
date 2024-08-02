@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <groupId>com.company</groupId>
-    <artifactId>juguty-parent</artifactId>
+    <artifactId>gestion-de-reclamos-y-apelaciones-parent</artifactId>
     <version>0.0.1</version>
   </parent>
-  <artifactId>juguty</artifactId>
-  <name>juguty</name>
+  <artifactId>gestion-de-reclamos-y-apelaciones</artifactId>
+  <name>Gestion de Reclamos y Apelaciones</name>
   <dependencies>
     <dependency>
       <groupId>org.bonitasoft.engine</groupId>
@@ -75,12 +76,6 @@
       <scope>provided</scope>
     </dependency>
     <dependency>
-      <groupId>${project.groupId}</groupId>
-      <artifactId>juguty-bdm-model</artifactId>
-      <version>${project.version}</version>
-      <scope>provided</scope>
-    </dependency>
-    <dependency>
       <groupId>org.bonitasoft.web.application</groupId>
       <artifactId>bonita-admin-application</artifactId>
       <type>zip</type>
@@ -88,10 +83,10 @@
       <scope>compile</scope>
     </dependency>
     <dependency>
-      <groupId>org.bonitasoft.actorfilter</groupId>
-      <artifactId>bonita-actorfilter-initiator-manager</artifactId>
-      <version>1.0.0</version>
-      <scope>compile</scope>
+      <groupId>${project.groupId}</groupId>
+      <artifactId>gestion-de-reclamos-y-apelaciones-bdm-model</artifactId>
+      <version>${project.version}</version>
+      <scope>provided</scope>
     </dependency>
   </dependencies>
   <build>

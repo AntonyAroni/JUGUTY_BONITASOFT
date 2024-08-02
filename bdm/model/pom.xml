@@ -4,10 +4,10 @@
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <groupId>com.company</groupId>
-    <artifactId>juguty-bdm-parent</artifactId>
+    <artifactId>gestion-de-reclamos-y-apelaciones-bdm-parent</artifactId>
     <version>0.0.1</version>
   </parent>
-  <artifactId>juguty-bdm-model</artifactId>
+  <artifactId>gestion-de-reclamos-y-apelaciones-bdm-model</artifactId>
   <dependencies>
     <dependency>
       <groupId>org.bonitasoft.engine.data</groupId>

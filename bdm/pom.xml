@@ -4,10 +4,10 @@
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <groupId>com.company</groupId>
-    <artifactId>juguty-parent</artifactId>
+    <artifactId>gestion-de-reclamos-y-apelaciones-parent</artifactId>
     <version>0.0.1</version>
   </parent>
-  <artifactId>juguty-bdm-parent</artifactId>
+  <artifactId>gestion-de-reclamos-y-apelaciones-bdm-parent</artifactId>
   <packaging>pom</packaging>
   <modules>
     <module>model</module>
