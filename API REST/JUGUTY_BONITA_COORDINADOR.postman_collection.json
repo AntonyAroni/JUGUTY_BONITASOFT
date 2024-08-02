@@ -1,0 +1,169 @@
+{
+	"info": {
+		"_postman_id": "d19763f9-878a-48a2-9ba7-5fc734164b25",
+		"name": "JUGUTY_BONITA_COORDINADOR",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "37303775"
+	},
+	"item": [
+		{
+			"name": "Login_Usuario",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "william.jobs",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "bpm",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{BONITA}}loginservice",
+					"host": [
+						"{{BONITA}}loginservice"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ObtenerProceso",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BONITA}}API/bpm/process?p=0&c=10",
+					"host": [
+						"{{BONITA}}API"
+					],
+					"path": [
+						"bpm",
+						"process"
+					],
+					"query": [
+						{
+							"key": "p",
+							"value": "0"
+						},
+						{
+							"key": "c",
+							"value": "10"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EnviarProceso",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-Bonita-API-Token",
+						"value": "{{bonita_token}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"usuarioInput\": {\r\n        \"nombres\": \"Pedro\",\r\n        \"apellidos\": \"Quispe Quispe\",\r\n        \"correo\": \"atahualpa@unsa.edu.pe\",\r\n        \"numeroTelefonico\": \"987 874 412\",\r\n        \"rol\": \"estudiante\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BONITA}}API/bpm/process/{{PROCESSID}}/instantiation",
+					"host": [
+						"{{BONITA}}API"
+					],
+					"path": [
+						"bpm",
+						"process",
+						"{{PROCESSID}}",
+						"instantiation"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Logout_Usuario",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-Bonita-API-Token",
+						"value": "{{bonita_token}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "william.jobs",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "bpm",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{BONITA}}logoutservice",
+					"host": [
+						"{{BONITA}}logoutservice"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "bonita_token",
+			"value": "fd06b081-8b11-435e-958d-df461ef88eca",
+			"type": "string"
+		}
+	]
+}

@@ -1,0 +1,146 @@
+{
+	"info": {
+		"_postman_id": "ebbcad27-4c20-4e0c-bd54-a3d149b50481",
+		"name": "JUGUTY_BONITA_SEGUIMIENTO",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "37303775"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "daniela.angelo",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "bpm",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{BONITA}}loginservice",
+					"host": [
+						"{{BONITA}}loginservice"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ShowTask",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BONITA}}API/bpm/humanTask?X-Bonita-API-Token={{X-Bonita-API-Token}}",
+					"host": [
+						"{{BONITA}}API"
+					],
+					"path": [
+						"bpm",
+						"humanTask"
+					],
+					"query": [
+						{
+							"key": "X-Bonita-API-Token",
+							"value": "{{X-Bonita-API-Token}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TakeHumanTask",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "X-Bonita-API-Token",
+						"value": "{{X-Bonita-API-Token}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"assigned_id\": \"38\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BONITA}}API/bpm/humanTask/80044",
+					"host": [
+						"{{BONITA}}API"
+					],
+					"path": [
+						"bpm",
+						"humanTask",
+						"80044"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PostHumanTask",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-Bonita-API-Token",
+						"value": "{{X-Bonita-API-Token}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"seguimientoInput\": {\r\n        \"fechaInicio\": \"2024-07-20\",\r\n        \"usuarioSeguimiento\": \"USER20240730\",\r\n        \"documentosAdjutnos\": \"URL\",\r\n        \"estadoSeguimiento\": \"Aprobado\",\r\n        \"registroRevisiones\": \"2024-07-20, 2024-07-25\",\r\n        \"comentarios\": \"suerte para la proxima\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BONITA}}API/bpm/userTask/80044/execution",
+					"host": [
+						"{{BONITA}}API"
+					],
+					"path": [
+						"bpm",
+						"userTask",
+						"80044",
+						"execution"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"key": "X-Bonita-API-Token",
+			"value": "eebc04ab-d917-4459-9d24-a35f06f208e1"
+		}
+	]
+}
