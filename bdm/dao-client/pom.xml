@@ -4,14 +4,14 @@
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <groupId>com.company</groupId>
-    <artifactId>juguty-bdm-parent</artifactId>
+    <artifactId>gestion-de-reclamos-y-apelaciones-bdm-parent</artifactId>
     <version>0.0.1</version>
   </parent>
-  <artifactId>juguty-bdm-dao-client</artifactId>
+  <artifactId>gestion-de-reclamos-y-apelaciones-bdm-dao-client</artifactId>
   <dependencies>
     <dependency>
       <groupId>${project.groupId}</groupId>
-      <artifactId>juguty-bdm-model</artifactId>
+      <artifactId>gestion-de-reclamos-y-apelaciones-bdm-model</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>
